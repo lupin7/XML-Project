@@ -1,0 +1,42 @@
+CREATE TABLE `sales` (
+  `sale_id` int(11) AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `amount` decimal(10,2) unsigned NOT NULL DEFAULT '0',
+  `paid` decimal(10,2) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(255) NOT NULL,
+  `salesperson` varchar(255) NOT NULL,
+  PRIMARY KEY (`sale_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<sales>
+    <sale date="2014-11-22">
+        <amount>9.99</amount>
+        <paid>9.99</paid>
+        <description>System Cleaning</description>
+        <salesperson>M. Santos</salesperson>
+    </sale>
+    <sale date="2014-11-24">
+        <amount>32.99</amount>
+        <paid>0.00</paid>
+        <description>Standard Service Special</description>
+        <salesperson>J. Restrepo</salesperson>
+    </sale>
+    <sale date="2014-11-23">
+        <amount>19.99</amount>
+        <paid>19.99</paid>
+        <description>Hardware Install</description>
+        <salesperson>J. Restrepo</salesperson>
+    </sale>
+    <sale date="2014-11-25">
+        <amount>29.99</amount>
+        <paid>29.99</paid>
+        <description>Virus Removal</description>
+        <salesperson>M. Santos</salesperson>
+    </sale>
+</sales>
+
+
+transform sale data_transform sales

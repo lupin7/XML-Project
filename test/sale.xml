@@ -1,0 +1,26 @@
+<sales>
+  <sale date="2014-03-02">
+    <amount>9.99</amount>
+    <paid>9.99</paid>
+    <description>System Cleaning</description>
+    <salesperson>M. Santos</salesperson>
+  </sale>
+  <sale date="2014-02-24">
+    <amount>29.99</amount>
+    <paid>29.99</paid>
+    <description>Virus Removal</description>
+    <salesperson>M. Santos</salesperson>
+  </sale>
+  <sale date="2014-02-10">
+    <amount>19.99</amount>
+    <paid>19.99</paid>
+    <description>Hardware Install</description>
+    <salesperson>J. Restrepo</salesperson>
+  </sale>
+  <sale date="2014-02-22">
+    <amount>32.99</amount>
+    <paid>0.00</paid>
+    <description>Standard Service Special</description>
+    <salesperson>J. Restrepo</salesperson>
+  </sale>
+</sales>

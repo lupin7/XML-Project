@@ -1,0 +1,39 @@
+/* Yes, this is a very simple stylesheet! */
+
+body {	
+	font: serif;
+	background-color: white; 
+	text-align: center;
+
+}
+
+div {
+	width: 690px;
+	margin: 5px auto;
+	padding: 5px;
+}
+table {
+	width: 700px;
+	margin: 5px -5px;
+	padding: 5px 0px;
+	border: 1px dashed black;
+	text-align: center;
+	background: #DADAC8;
+}
+.head, h2 {
+	text-decoration: underline;
+	font-family: sans-serif;
+}
+td {
+	padding: 5px;
+}
+tr:nth-child(odd) td {
+    background-color: #B5F0E1;
+}
+tr:nth-child(even) td {
+    background-color: #47DAB5;
+}
+
+.right {
+	text-align: right;
+}

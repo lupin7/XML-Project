@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="project_schema">
+	<table_structure name="sale">
+		<field Field="sale_id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="date" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="amount" Type="decimal(11,2)" Null="NO" Key="" Default="0.00" Extra="" Comment="" />
+		<field Field="paid" Type="decimal(11,2)" Null="NO" Key="" Default="0.00" Extra="" Comment="" />
+		<field Field="description" Type="varchar(150)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="salesperson" Type="varchar(150)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="sale" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="sale_id" Collation="A" Cardinality="4" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="sale" Engine="InnoDB" Version="10" Row_format="Compact" Rows="4" Avg_row_length="4096" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="14" Create_time="2014-11-28 01:03:56" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="sale">
+	<row>
+		<field name="sale_id">1</field>
+		<field name="date">2014-03-02</field>
+		<field name="amount">9.99</field>
+		<field name="paid">9.99</field>
+		<field name="description">System Cleaning</field>
+		<field name="salesperson">M. Santos</field>
+	</row>
+	<row>
+		<field name="sale_id">2</field>
+		<field name="date">2014-02-24</field>
+		<field name="amount">29.99</field>
+		<field name="paid">29.99</field>
+		<field name="description">Virus Removal</field>
+		<field name="salesperson">M. Santos</field>
+	</row>
+	<row>
+		<field name="sale_id">3</field>
+		<field name="date">2014-02-10</field>
+		<field name="amount">19.99</field>
+		<field name="paid">19.99</field>
+		<field name="description">Hardware Install</field>
+		<field name="salesperson">J. Restrepo</field>
+	</row>
+	<row>
+		<field name="sale_id">4</field>
+		<field name="date">2014-02-22</field>
+		<field name="amount">32.99</field>
+		<field name="paid">0.00</field>
+		<field name="description">Standard Service Special</field>
+		<field name="salesperson">J. Restrepo</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

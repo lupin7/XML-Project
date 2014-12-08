@@ -1,0 +1,31 @@
+<?xml version="1.0" ?> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="sales" type="salesType" /> 
+	
+	<xsd:complexType name="salesType">
+		<xsd:sequence>
+			<xsd:element name="sale" type="saleType" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<!-- <xsd:attribute name="date" type="xsd:date" /> -->
+	</xsd:complexType>
+
+	<xsd:complexType name="saleType">
+		<xsd:sequence>
+			<xsd:element name="amount" type="xsd:float" />
+			<xsd:element name="paid" type="xsd:float" />
+			<xsd:element name="description" type="xsd:string" />
+			<xsd:element name="salesperson" type="xsd:string" />
+		</xsd:sequence>
+		<xsd:attribute name="date" type="xsd:date" />
+	</xsd:complexType>
+</xsd:schema>
+
+<!-- <?xml version=”1.0” encoding=”UTF-8”?>
+<sales>
+	<sale date=”2011-02-24”>
+		<amount>29.99</amount>
+		<paid>29.99</paid>
+		<description>Virus removal</description>
+		<salesperson>J. Smith</salesperson>
+	</sale>
+</sales> -->
